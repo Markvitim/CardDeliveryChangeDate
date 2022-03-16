@@ -1,6 +1,8 @@
 package ru.netology;
 
 import com.github.javafaker.Faker;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -26,11 +28,6 @@ public class CardDeliveryChangeDateTest {
 
     }
 
-    private void printTestData(String city, String name, String phone) {
-        System.out.println(city);
-        System.out.println(name);
-        System.out.println(phone);
-    }
 
     @Test
     void shouldGenerateTestData() {
