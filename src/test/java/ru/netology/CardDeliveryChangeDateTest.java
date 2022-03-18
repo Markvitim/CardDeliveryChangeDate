@@ -2,6 +2,7 @@ package ru.netology;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selectors;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -49,8 +50,7 @@ public class CardDeliveryChangeDateTest {
         String planingDateFinish = generateDate(8);
         Configuration.holdBrowserOpen = true;
         open("http://localhost:9999");
-        $("[data-test-id=\"city\"] input").
-                setValue(DataGenerator.Registration.generateInfo("ru").getCity());
+        $("[data-test-id=\"city\"] input").setValue(DataGenerator.Registration.generateInfo("ru").getCity());
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(planingDateStart);
         $("[name=\"name\"].input__control")

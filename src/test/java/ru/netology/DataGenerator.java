@@ -1,7 +1,6 @@
 package ru.netology;
 
 import com.github.javafaker.Faker;
-import lombok.Data;
 import lombok.experimental.UtilityClass;
 
 import java.util.Locale;
