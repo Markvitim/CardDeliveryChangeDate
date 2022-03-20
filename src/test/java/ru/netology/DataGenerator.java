@@ -8,7 +8,6 @@ import java.util.Locale;
 @UtilityClass
 public class DataGenerator {
 
-
     @UtilityClass
     public static class Registration {
 
